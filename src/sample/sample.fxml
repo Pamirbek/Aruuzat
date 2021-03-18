@@ -1,0 +1,29 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:controller="sample.Controller" prefHeight="500.0" prefWidth="475.0" alignment="CENTER"
+          xmlns:fx="http://javafx.com/fxml" hgap="10" vgap="10">
+
+    <VBox spacing="10" alignment="CENTER">
+        <Label>Name</Label>
+        <TextField  fx:id="nameField"/>
+
+        <Label>Surname</Label>
+        <TextField fx:id="surnameField"/>
+
+        <Label>ID</Label>
+        <TextField fx:id="idField"/>
+
+        <Label>Telephone</Label>
+        <TextField fx:id="telephoneField"/>
+
+        <HBox spacing="40" alignment="CENTER">
+            <Button fx:id="add">Add Volunteer</Button>
+            <Button fx:id="show">Show Volunteers</Button>
+            <Button fx:id="delete">Delete Volunteers</Button>
+        </HBox>
+
+        <Text textAlignment="CENTER" fx:id="check"/>
+    </VBox>
+
+</GridPane>

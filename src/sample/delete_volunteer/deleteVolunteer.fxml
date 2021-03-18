@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<GridPane xmlns="http://javafx.com/javafx" alignment="CENTER"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="sample.delete_volunteer.DeleteVolunteerController"
+          prefHeight="500.0" prefWidth="475.0">
+    <VBox spacing="10" alignment="CENTER">
+        <Label>Please type the id of a student</Label>
+        <TextField fx:id="idField"/>
+        <HBox spacing="40" alignment="CENTER">
+            <Button fx:id="delete">Delete</Button>
+            <Button fx:id="back">Back</Button>
+        </HBox>
+
+        <Text textAlignment="CENTER" fx:id="check"/>
+    </VBox>
+</GridPane>

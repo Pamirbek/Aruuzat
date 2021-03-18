@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+<GridPane xmlns="http://javafx.com/javafx" alignment="CENTER"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="sample.all_volunteers.VolunteersTableController"
+          prefHeight="500.0" prefWidth="475.0">
+    <VBox spacing="10" alignment="CENTER">
+
+        <Label style="-fx-font: NORMAL 20 Tahoma;" text="Volunteers"
+               GridPane.columnIndex="0" GridPane.rowIndex="0">
+        </Label>
+        <TableView prefWidth="370" fx:id="tbData" GridPane.columnIndex="0"
+                   GridPane.rowIndex="1">
+            <columns>
+                <TableColumn fx:id="name" text="Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="surname" text="Surname">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="surname" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="id" text="ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="telephone" text="Telephone">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="telephone" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <HBox spacing="20" alignment="CENTER_RIGHT">
+            <Button fx:id="back">Back</Button>
+        </HBox>
+    </VBox>
+
+</GridPane>
